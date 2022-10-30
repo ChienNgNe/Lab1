@@ -1,0 +1,85 @@
+13:56:52 **** Incremental Build of configuration Debug for project Timer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'display7SEG':
+../Core/Src/main.c:33:6: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   33 |      HAL_GPIO_WritePin(PB0_GPIO_Port, PB0_Pin , 0);
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:33:24: error: 'PB0_GPIO_Port' undeclared (first use in this function)
+   33 |      HAL_GPIO_WritePin(PB0_GPIO_Port, PB0_Pin , 0);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:33:24: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:33:39: error: 'PB0_Pin' undeclared (first use in this function)
+   33 |      HAL_GPIO_WritePin(PB0_GPIO_Port, PB0_Pin , 0);
+      |                                       ^~~~~~~
+../Core/Src/main.c:34:24: error: 'PB1_GPIO_Port' undeclared (first use in this function)
+   34 |      HAL_GPIO_WritePin(PB1_GPIO_Port, PB1_Pin , 0);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:34:39: error: 'PB1_Pin' undeclared (first use in this function)
+   34 |      HAL_GPIO_WritePin(PB1_GPIO_Port, PB1_Pin , 0);
+      |                                       ^~~~~~~
+../Core/Src/main.c:35:24: error: 'PB2_GPIO_Port' undeclared (first use in this function)
+   35 |      HAL_GPIO_WritePin(PB2_GPIO_Port, PB2_Pin , 0);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:35:39: error: 'PB2_Pin' undeclared (first use in this function)
+   35 |      HAL_GPIO_WritePin(PB2_GPIO_Port, PB2_Pin , 0);
+      |                                       ^~~~~~~
+../Core/Src/main.c:36:24: error: 'PB3_GPIO_Port' undeclared (first use in this function)
+   36 |      HAL_GPIO_WritePin(PB3_GPIO_Port, PB3_Pin , 0);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:36:39: error: 'PB3_Pin' undeclared (first use in this function)
+   36 |      HAL_GPIO_WritePin(PB3_GPIO_Port, PB3_Pin , 0);
+      |                                       ^~~~~~~
+../Core/Src/main.c:37:24: error: 'PB4_GPIO_Port' undeclared (first use in this function)
+   37 |      HAL_GPIO_WritePin(PB4_GPIO_Port, PB4_Pin , 0);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:37:39: error: 'PB4_Pin' undeclared (first use in this function)
+   37 |      HAL_GPIO_WritePin(PB4_GPIO_Port, PB4_Pin , 0);
+      |                                       ^~~~~~~
+../Core/Src/main.c:38:24: error: 'PB5_GPIO_Port' undeclared (first use in this function)
+   38 |      HAL_GPIO_WritePin(PB5_GPIO_Port, PB5_Pin , 0);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:38:39: error: 'PB5_Pin' undeclared (first use in this function)
+   38 |      HAL_GPIO_WritePin(PB5_GPIO_Port, PB5_Pin , 0);
+      |                                       ^~~~~~~
+../Core/Src/main.c:39:24: error: 'PB6_GPIO_Port' undeclared (first use in this function)
+   39 |      HAL_GPIO_WritePin(PB6_GPIO_Port, PB6_Pin , 1);
+      |                        ^~~~~~~~~~~~~
+../Core/Src/main.c:39:39: error: 'PB6_Pin' undeclared (first use in this function)
+   39 |      HAL_GPIO_WritePin(PB6_GPIO_Port, PB6_Pin , 1);
+      |                                       ^~~~~~~
+../Core/Src/main.c:43:49: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   43 |      HAL_GPIO_WritePin(PB0_GPIO_Port, PB0_Pin , GPIO_PIN_SET);
+      |                                                 ^~~~~~~~~~~~
+../Core/Src/main.c:44:49: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   44 |      HAL_GPIO_WritePin(PB1_GPIO_Port, PB2_Pin , GPIO_PIN_RESET);
+      |                                                 ^~~~~~~~~~~~~~
+../Core/Src/main.c:49:39: error: 'PB7_Pin' undeclared (first use in this function)
+   49 |      HAL_GPIO_WritePin(PB6_GPIO_Port, PB7_Pin , GPIO_PIN_SET);
+      |                                       ^~~~~~~
+../Core/Src/main.c:109:24: error: 'PB7_GPIO_Port' undeclared (first use in this function)
+  109 |      HAL_GPIO_WritePin(PB7_GPIO_Port, PB7_Pin , GPIO_PIN_SET);
+      |                        ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:241,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:136:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h: At top level:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:235:6: warning: conflicting types for 'HAL_GPIO_WritePin'
+  235 | void HAL_GPIO_WritePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:33:6: note: previous implicit declaration of 'HAL_GPIO_WritePin' was here
+   33 |      HAL_GPIO_WritePin(PB0_GPIO_Port, PB0_Pin , 0);
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_GPIO_Init':
+../Core/Src/main.c:313:25: error: 'LED_RED_Pin' undeclared (first use in this function)
+  313 |   GPIO_InitStruct.Pin = LED_RED_Pin|LED_GREEN_Pin;
+      |                         ^~~~~~~~~~~
+../Core/Src/main.c:313:37: error: 'LED_GREEN_Pin' undeclared (first use in this function)
+  313 |   GPIO_InitStruct.Pin = LED_RED_Pin|LED_GREEN_Pin;
+      |                                     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+13:56:53 Build Failed. 21 errors, 2 warnings. (took 384ms)
+

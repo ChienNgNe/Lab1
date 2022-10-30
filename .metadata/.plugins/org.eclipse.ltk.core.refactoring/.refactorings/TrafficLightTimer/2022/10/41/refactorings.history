@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TrafficLightTimer/TrafficLight.ioc&apos; to &apos;TrafficLightTimer.ioc&apos;" description="Rename resource &apos;TrafficLight.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="TrafficLight.ioc" name="TrafficLightTimer.ioc" stamp="1664952103766" updateReferences="true"/>
+</session>

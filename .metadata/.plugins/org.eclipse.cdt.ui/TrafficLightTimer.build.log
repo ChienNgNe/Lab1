@@ -1,0 +1,26 @@
+14:35:42 **** Incremental Build of configuration Debug for project TrafficLightTimer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_automatic.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_automatic.d" -MT"Core/Src/fsm_automatic.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_automatic.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+../Core/Src/fsm_automatic.c: In function 'fsm_automatic':
+../Core/Src/fsm_automatic.c:21:3: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   21 |   HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/fsm_automatic.c:21:21: error: 'GPIOx' undeclared (first use in this function)
+   21 |   HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+      |                     ^~~~~
+../Core/Src/fsm_automatic.c:21:21: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_automatic.c:21:28: error: 'GPIO_Pin' undeclared (first use in this function)
+   21 |   HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+      |                            ^~~~~~~~
+../Core/Src/fsm_automatic.c:21:38: error: 'PinState' undeclared (first use in this function)
+   21 |   HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
+      |                                      ^~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/fsm_automatic.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+14:35:42 Build Failed. 5 errors, 1 warnings. (took 570ms)
+

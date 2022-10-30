@@ -1,0 +1,133 @@
+
+#include <stdio.h>
+
+
+
+
+
+
+
+void display7SEG(int num)
+
+{
+	
+		if(num == 0){
+		 printf("0");
+		    }
+		
+	    if(num==1){
+	    printf("1");
+	    }
+	    
+	    if(num==2){
+	    printf("2");
+	    }
+	    
+	    if(num==3){
+	    printf("3");
+	   }
+	    
+	    if(num==4){
+	    printf("4");
+	    }
+	  
+	    if(num==5){
+	    printf("5");
+	    }
+	    if(num==6){
+	    printf("6");
+	    }
+	    	    //7
+	    if(num==7){
+	    	    printf("7");
+	    }
+	    	    //8
+	    if(num==8){
+	    	    printf("8");
+	    }
+	    	    //9
+	    if(num==9){
+	    	    printf("9");
+	    }
+
+}
+
+const int MAX_LED = 4;
+int led_buffer[2];
+
+
+int denLed1 , denLed2;
+void updateClockBuffer (int a){
+	while(a > 0)
+	    {
+		 	for (int i = 0 ; i < 2 ; i++){
+	        led_buffer[i] = a % 10;
+	        a /=  10;
+		 	}
+	    }
+	denLed2=led_buffer[0];
+	denLed1=led_buffer[1];
+}
+void update7SEG(int a){
+
+	switch(a){
+	case 0:
+
+							if(denLed1==1){
+							printf("%d",denLed1);
+              display7SEG(0);
+							}
+
+		break;
+    case 1:
+							if(denLed2==5){
+				  			printf("%d",denLed2);
+                display7SEG(9);
+							}
+
+		break;
+
+	default:
+		break;
+
+	}
+
+}
+
+
+int index_led = 0 ;
+int main(void)
+{
+
+  
+  int hour = 15 , minute = 8 , second = 59;
+
+  while (1)
+  {
+	  updateClockBuffer (hour) ;
+    update7SEG(0);
+	  update7SEG(1);
+  second++;
+	   if ( second >= 60) {
+	   second = 0;
+	   minute ++;
+	   }
+	   if( minute >= 60) {
+	   minute = 0;
+	   hour ++;
+	   }
+	   if( hour >=24) {
+	   hour = 0;
+	   }
+
+
+
+
+
+
+  }
+
+}
+
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="PB3"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="PB3"/>
+			<item value="PB2"/>
+			<item value="PB1"/>
+			<item value="1"/>
+			<item value="0"/>
+			<item value="GPIOA, GPIO_PIN_6"/>
+			<item value="GPIOA, GPIO_PIN_5"/>
+			<item value="GPIOA, GPIO_PIN_4"/>
+			<item value="GPIOA, GPIO_PIN_3"/>
+			<item value="GPIOA, GPIO_PIN_2"/>
+			<item value="GPIOA, GPIO_PIN_1"/>
+			<item value="GPIOA, GPIO_PIN_0"/>
+			<item value="GPIO_PIN_10"/>
+			<item value="GPIO_PIN_9"/>
+			<item value="GPIO_PIN_8"/>
+		</list>
+		<list key="replacehistory">
+			<item value="PB2"/>
+			<item value="PB1"/>
+			<item value="PB0"/>
+			<item value="GPIO_PIN_SET"/>
+			<item value="GPIO_PIN_RESET"/>
+			<item value="PB6_GPIO_Port, PB6_PIN"/>
+			<item value="PB5_GPIO_Port, PB5_PIN"/>
+			<item value="PB4_GPIO_Port, PB4_PIN"/>
+			<item value="PB3_GPIO_Port, PB3_PIN"/>
+			<item value="PB2_GPIO_Port, PB2_PIN"/>
+			<item value="PB1_GPIO_Port, PB1_PIN"/>
+			<item value="PB0_GPIO_Port, PB0_PIN"/>
+			<item value="GPIO_PIN_6"/>
+			<item value="GPIO_PIN_5"/>
+			<item value="GPIO_PIN_4"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1080"/>
+		<item key="DIALOG_Y_ORIGIN" value="197"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

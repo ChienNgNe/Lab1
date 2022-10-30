@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+
+
+int main(){
+	int a =6;
+	int b=7;
+	int c;
+	c = a + b;
+	printf("DIT ME THANG NGU");
+	printf("DCMM");
+}
